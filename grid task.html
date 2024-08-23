@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid task</title>
+    <style>
+        .parent{
+            background-color: grey;
+            height: 400px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 200px auto;
+            grid-template-rows:10vh 10vh auto 10vh;
+            gap: 10px;
+            
+
+        }
+        .a1{
+            grid-area:h;
+            background-color: cadetblue;  
+            
+        }
+        .a2{
+            grid-area: a;
+            background-color: brown;
+        }
+        .a3{
+            grid-area: a1;
+            background-color: red;
+        }
+        .a4{
+            grid-area:s;
+            background-color: yellow;
+            display: grid;
+            gap: 1rem;
+            
+        }
+        .a5{
+            grid-area: a2;
+            background-color: aqua;
+        }
+        .a6{
+            grid-area: f;
+            background-color: crimson;
+
+        }
+        .parent{
+            grid-template-areas: 'h h h'
+            'a a a'
+            'a1 s a2'
+            'f f f';
+        }
+        .b1{
+            background-color: green;
+            margin-left:4%;
+            margin-right: 4%;
+             
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="a1"><center><h3>HEAD</h3></center></div>
+        <div class="a2"><center><h3>home about features gallery term contact</h3></center></div>
+        <div class="a3"><center><h3>Aside 1</h3></center></div>
+        <div class="a4">
+            <center><h3>Section</h3></center>
+            <div class="b1">article1</div>
+            <div class="b1">article2</div>
+            <div class="b1">article</div>
+        </div>
+        <div class="a5"><h3>Aside2</h3></center></div>
+        <div class="a6"><center><h3>footer</h3></center></div>
+
+    </div>
+    
+</body>
+</html>
